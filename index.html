@@ -4,34 +4,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>City Terrace Window Cleaning | Neighbor-Owned Window Cleaning in East LA</title>
-  <meta name="description" content="City Terrace Window Cleaning offers streak-free residential and storefront window services across East Los Angeles. Neighbor-owned, reliable, and affordable." />
+  <meta
+    name="description"
+    content="City Terrace Window Cleaning is a neighbor-owned team delivering streak-free residential and storefront window care across East Los Angeles. Cotizaciones rápidas en inglés y español."
+  />
   <meta property="og:title" content="City Terrace Window Cleaning" />
-  <meta property="og:description" content="Neighbor-owned, reliable, and affordable window cleaning serving City Terrace and East LA." />
+  <meta
+    property="og:description"
+    content="Neighbor-owned, reliable, and affordable window cleaning serving City Terrace and East LA. Cotiza hoy mismo."
+  />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://cityterracewindowcleaning.com" />
   <meta property="og:image" content="https://raw.githubusercontent.com/Dpgorbea/CityTerraceWC/main/IMG_0361.jpg" />
   <link rel="preconnect" href="https://fonts.bunny.net" />
-  <link href="https://fonts.bunny.net/css?family=inter:400,500,600,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.bunny.net/css?family=plus-jakarta-sans:400,500,600,700&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
-      font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     }
     .fade-in {
-      animation: fadeInUp 0.9s ease forwards;
       opacity: 0;
-      transform: translateY(10px);
+      animation: fadeInUp 0.9s ease forwards;
+      transform: translateY(18px);
     }
-    .fade-in:nth-child(2) {
-      animation-delay: 0.2s;
-    }
-    .fade-in:nth-child(3) {
-      animation-delay: 0.4s;
-    }
+    .fade-in:nth-child(2) { animation-delay: 0.15s; }
+    .fade-in:nth-child(3) { animation-delay: 0.3s; }
+    .fade-in:nth-child(4) { animation-delay: 0.45s; }
     @keyframes fadeInUp {
       0% {
         opacity: 0;
-        transform: translateY(16px);
+        transform: translateY(24px);
       }
       100% {
         opacity: 1;
@@ -39,12 +45,12 @@
       }
     }
     .fade-gallery img {
-      animation: fadeIn 1.2s ease both;
+      animation: fadeIn 1.1s ease both;
     }
-    .fade-gallery img:nth-child(2) { animation-delay: 0.15s; }
-    .fade-gallery img:nth-child(3) { animation-delay: 0.3s; }
-    .fade-gallery img:nth-child(4) { animation-delay: 0.45s; }
-    .fade-gallery img:nth-child(5) { animation-delay: 0.6s; }
+    .fade-gallery img:nth-child(2) { animation-delay: 0.1s; }
+    .fade-gallery img:nth-child(3) { animation-delay: 0.2s; }
+    .fade-gallery img:nth-child(4) { animation-delay: 0.3s; }
+    .fade-gallery img:nth-child(5) { animation-delay: 0.4s; }
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
@@ -54,182 +60,337 @@
 <body class="bg-slate-50 text-slate-800">
   <header class="relative overflow-hidden">
     <div class="absolute inset-0 -z-10">
-      <img src="https://images.unsplash.com/photo-1529429608931-07abb1b7d95e?auto=format&fit=crop&w=1600&q=80" alt="Clean window overlooking city" class="h-full w-full object-cover opacity-60" />
-      <div class="absolute inset-0 bg-gradient-to-b from-sky-900/70 via-sky-900/60 to-slate-900/70"></div>
+      <img
+        src="https://images.unsplash.com/photo-1503389152951-9f343605f61e?auto=format&fit=crop&w=2000&q=80"
+        alt="Clean modern windows reflecting the skyline"
+        class="h-full w-full object-cover opacity-70"
+      />
+      <div class="absolute inset-0 bg-gradient-to-br from-sky-900/80 via-slate-900/75 to-slate-900/90"></div>
     </div>
-    <div class="mx-auto flex max-w-6xl flex-col gap-10 px-6 py-20 text-white sm:px-10 lg:flex-row lg:items-center lg:gap-16">
-      <div class="space-y-6 lg:w-1/2">
-        <div class="fade-in">
-          <span class="inline-flex items-center rounded-full bg-white/10 px-4 py-1 text-sm font-semibold uppercase tracking-widest">🧼 City Terrace Window Cleaning</span>
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-6 text-white sm:px-10">
+      <div class="flex items-center gap-2 text-lg font-semibold">
+        <span class="text-2xl">🧼</span>
+        <span>City Terrace Window Cleaning</span>
+      </div>
+      <div class="hidden items-center gap-6 text-sm font-semibold uppercase tracking-[0.2em] lg:flex">
+        <a href="#services" class="text-white/80 transition hover:text-white">Services</a>
+        <a href="#pricing" class="text-white/80 transition hover:text-white">Pricing</a>
+        <a href="#gallery" class="text-white/80 transition hover:text-white">Gallery</a>
+        <a href="#reviews" class="text-white/80 transition hover:text-white">Reviews</a>
+        <a href="#faq" class="text-white/80 transition hover:text-white">FAQ</a>
+        <a href="#espanol" class="inline-flex items-center rounded-full border border-white/30 px-4 py-1 text-xs">En Español</a>
+      </div>
+      <div class="flex items-center gap-3 text-sm font-semibold">
+        <a
+          href="tel:15626852108"
+          class="rounded-full border border-white/40 px-5 py-2 text-white transition hover:border-white hover:bg-white/10"
+        >Call</a>
+        <a
+          href="sms:15626852108"
+          class="hidden rounded-full bg-white px-5 py-2 text-sky-700 shadow-lg shadow-sky-900/30 transition hover:bg-sky-100 sm:inline-flex"
+        >Text Quote</a>
+      </div>
+    </nav>
+    <div class="mx-auto flex max-w-6xl flex-col gap-12 px-6 pb-24 pt-10 text-white sm:px-10 lg:flex-row lg:items-center lg:gap-20">
+      <div class="flex-1 space-y-8">
+        <div class="fade-in inline-flex items-center gap-2 rounded-full bg-white/10 px-5 py-2 text-xs font-semibold uppercase tracking-[0.35em] text-sky-100/80">
+          Neighbor-Owned • Reliable • Affordable
         </div>
-        <div class="fade-in space-y-4">
-          <h1 class="text-4xl font-bold sm:text-5xl">Streak-Free Window Cleaning in City Terrace &amp; East LA.</h1>
-          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-sky-100/80">Neighbor-Owned • Reliable • Affordable</p>
-          <p class="text-lg text-slate-100 sm:text-xl">Neighbor-owned, affordable, and ready with fast free quotes. We leave every pane sparkling so you can enjoy the view.</p>
+        <div class="space-y-6">
+          <h1 class="fade-in text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">Streak-Free Window Cleaning in City Terrace &amp; East LA.</h1>
+          <p class="fade-in max-w-xl text-lg text-slate-100 sm:text-xl">
+            Trusted neighbors delivering spotless windows for homes and storefronts across East Los Angeles. Fast quotes, friendly service, and premium results every visit.
+          </p>
         </div>
-        <div class="fade-in flex flex-wrap items-center gap-4">
-          <a href="tel:15626852108" class="rounded-full bg-white px-6 py-3 font-semibold text-sky-900 shadow-lg shadow-sky-900/20 transition hover:bg-sky-100">Call</a>
-          <a href="sms:15626852108" class="rounded-full border border-white/70 px-6 py-3 font-semibold text-white transition hover:bg-white hover:text-sky-900">Text for Quote</a>
+        <div class="fade-in flex flex-wrap gap-4">
+          <a
+            href="sms:15626852108"
+            class="inline-flex items-center justify-center rounded-full bg-white px-7 py-3 text-base font-semibold text-sky-700 shadow-lg shadow-sky-900/30 transition hover:bg-sky-100"
+          >Text for Quote</a>
+          <a
+            href="tel:15626852108"
+            class="inline-flex items-center justify-center rounded-full border border-white/60 px-7 py-3 text-base font-semibold text-white transition hover:bg-white/10"
+          >Call 562-685-2108</a>
         </div>
-        <div class="fade-in flex flex-wrap items-center gap-2 text-sm font-medium uppercase tracking-widest text-sky-100/90">
-          <span>Neighbor-Owned</span>
-          <span class="h-1 w-1 rounded-full bg-sky-200"></span>
-          <span>Reliable</span>
-          <span class="h-1 w-1 rounded-full bg-sky-200"></span>
-          <span>Affordable</span>
+        <div class="fade-in flex flex-wrap items-center gap-4 text-sm text-sky-100/80">
+          <span class="inline-flex items-center gap-2">
+            <span class="inline-block h-2 w-2 rounded-full bg-emerald-300"></span> Locally Trusted
+          </span>
+          <span class="inline-flex items-center gap-2">
+            <span class="inline-block h-2 w-2 rounded-full bg-emerald-300"></span> Insured &amp; Detail-Oriented
+          </span>
+          <span class="inline-flex items-center gap-2">
+            <span class="inline-block h-2 w-2 rounded-full bg-emerald-300"></span> Same-Week Availability
+          </span>
         </div>
       </div>
-      <div class="fade-in lg:w-1/2">
-        <div class="overflow-hidden rounded-3xl border border-white/30 bg-white/10 shadow-xl shadow-sky-900/30 backdrop-blur">
-          <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=80" alt="Window with skyline" class="h-full w-full object-cover" />
+      <div class="fade-in flex-1">
+        <div class="overflow-hidden rounded-3xl border border-white/20 bg-white/10 shadow-2xl shadow-slate-900/40 backdrop-blur">
+          <img
+            src="https://images.unsplash.com/photo-1487956382158-bb926046304a?auto=format&fit=crop&w=1400&q=80"
+            alt="Technician cleaning a large window"
+            class="h-full w-full object-cover"
+          />
         </div>
       </div>
     </div>
   </header>
 
-  <main class="mx-auto max-w-6xl px-6 py-16 sm:px-10 sm:py-20">
+  <main class="mx-auto max-w-6xl px-6 py-20 sm:px-10">
     <section class="grid gap-6 sm:grid-cols-3">
-      <div class="rounded-2xl bg-white p-6 shadow-lg shadow-slate-200/40">
+      <div class="rounded-3xl bg-white p-7 shadow-xl shadow-slate-200/50">
         <h3 class="text-lg font-semibold text-slate-900">Neighbor-Owned</h3>
-        <p class="mt-2 text-sm text-slate-600">City Terrace locals serving our neighbors with pride, care, and a friendly smile.</p>
+        <p class="mt-3 text-sm text-slate-600">City Terrace locals who know the neighborhood, respect your home, and show up on time.</p>
       </div>
-      <div class="rounded-2xl bg-white p-6 shadow-lg shadow-slate-200/40">
+      <div class="rounded-3xl bg-white p-7 shadow-xl shadow-slate-200/50">
         <h3 class="text-lg font-semibold text-slate-900">Affordable &amp; Reliable</h3>
-        <p class="mt-2 text-sm text-slate-600">Clear pricing, on-time arrivals, and spotless results every visit.</p>
+        <p class="mt-3 text-sm text-slate-600">Clear pricing, careful workmanship, and a satisfaction guarantee every visit.</p>
       </div>
-      <div class="rounded-2xl bg-white p-6 shadow-lg shadow-slate-200/40">
+      <div class="rounded-3xl bg-white p-7 shadow-xl shadow-slate-200/50">
         <h3 class="text-lg font-semibold text-slate-900">Transparent Pricing</h3>
-        <p class="mt-2 text-sm text-slate-600">Quotes in minutes via text—no surprise fees, ever.</p>
+        <p class="mt-3 text-sm text-slate-600">Send photos for a tailored quote in minutes—no upsells or hidden fees.</p>
       </div>
     </section>
 
-    <section class="mt-20">
-      <div class="mb-10 flex flex-col gap-3 text-center">
-        <h2 class="text-3xl font-bold text-slate-900 sm:text-4xl">Services</h2>
-        <p class="text-slate-600">Sparkling windows for homes, storefronts, and more—inside and out.</p>
+    <section id="services" class="mt-24">
+      <div class="mb-12 text-center">
+        <p class="text-sm font-semibold uppercase tracking-[0.35em] text-sky-500">Our Services</p>
+        <h2 class="mt-3 text-3xl font-bold text-slate-900 sm:text-4xl">Crystal-Clear for Homes &amp; Storefronts</h2>
+        <p class="mt-4 text-base text-slate-600">Interior and exterior detailing tailored to the way Angelenos live and work.</p>
       </div>
       <div class="grid gap-6 md:grid-cols-3">
-        <div class="rounded-2xl bg-white p-6 shadow-lg shadow-slate-200/40">
+        <article class="flex h-full flex-col rounded-3xl border border-slate-200 bg-white/80 p-7 shadow-lg shadow-slate-200/60">
           <h3 class="text-xl font-semibold text-slate-900">Residential</h3>
-          <p class="mt-3 text-sm text-slate-600">Interior &amp; exterior windows, mirrors, patio doors, skylights, and screen cleaning.</p>
-        </div>
-        <div class="rounded-2xl bg-white p-6 shadow-lg shadow-slate-200/40">
+          <p class="mt-4 text-sm text-slate-600">Inside &amp; outside windows, mirrors, patio and sliding doors, skylights, and sunrooms.</p>
+          <div class="mt-auto pt-6 text-sm font-semibold text-sky-600">Ideal for apartments, bungalows, and ADUs.</div>
+        </article>
+        <article class="flex h-full flex-col rounded-3xl border border-slate-200 bg-white/80 p-7 shadow-lg shadow-slate-200/60">
           <h3 class="text-xl font-semibold text-slate-900">Storefront</h3>
-          <p class="mt-3 text-sm text-slate-600">Weekly &amp; monthly storefront maintenance to keep your business shining.</p>
-        </div>
-        <div class="rounded-2xl bg-white p-6 shadow-lg shadow-slate-200/40">
+          <p class="mt-4 text-sm text-slate-600">Scheduled storefront and lobby care with streak-free glass, frames, and entryways.</p>
+          <div class="mt-auto pt-6 text-sm font-semibold text-sky-600">Weekly, bi-weekly, or monthly visits.</div>
+        </article>
+        <article class="flex h-full flex-col rounded-3xl border border-slate-200 bg-white/80 p-7 shadow-lg shadow-slate-200/60">
           <h3 class="text-xl font-semibold text-slate-900">Additional Services</h3>
-          <p class="mt-3 text-sm text-slate-600">Track detailing, hard water spot removal, and post-construction cleanups.</p>
-        </div>
+          <p class="mt-4 text-sm text-slate-600">Screen washing, track detailing, hard water removal, construction clean-up, and more.</p>
+          <div class="mt-auto pt-6 text-sm font-semibold text-sky-600">Bundle add-ons for the best value.</div>
+        </article>
       </div>
     </section>
 
-    <section class="mt-20">
-      <div class="mb-10 flex flex-col gap-3 text-center">
-        <h2 class="text-3xl font-bold text-slate-900 sm:text-4xl">Simple Pricing</h2>
-        <p class="text-slate-600">Clear, flat-rate packages with no surprise add-ons.</p>
+    <section id="pricing" class="mt-24">
+      <div class="mb-12 text-center">
+        <p class="text-sm font-semibold uppercase tracking-[0.35em] text-sky-500">Simple Pricing</p>
+        <h2 class="mt-3 text-3xl font-bold text-slate-900 sm:text-4xl">Packages Built for East LA Homes</h2>
+        <p class="mt-4 text-base text-slate-600">Every plan includes interior &amp; exterior glass, basic track detailing, and final inspection.</p>
       </div>
       <div class="grid gap-6 md:grid-cols-3">
-        <div class="rounded-2xl bg-white p-8 shadow-xl shadow-slate-200/50">
+        <article class="flex h-full flex-col rounded-3xl bg-white p-8 shadow-2xl shadow-slate-200/60">
           <h3 class="text-xl font-semibold text-slate-900">Apartment / Small Home</h3>
-          <p class="mt-2 text-sm text-slate-500">Perfect for studios, apartments, and cozy homes.</p>
-          <p class="mt-6 text-4xl font-bold text-sky-600">$99–$149</p>
-          <p class="mt-4 text-sm text-slate-600">Includes interior &amp; exterior glass, mirrors, and sliding doors.</p>
-        </div>
-        <div class="rounded-2xl border-2 border-sky-500 bg-white p-8 shadow-xl shadow-sky-100">
+          <p class="mt-3 text-sm text-slate-500">Studios, duplexes, and cozy homes up to 1,200 sq. ft.</p>
+          <p class="mt-8 text-4xl font-bold text-sky-600">$99–$149</p>
+          <p class="mt-5 text-sm text-slate-600">Includes interior &amp; exterior windows, mirrors, and sliding doors.</p>
+        </article>
+        <article class="flex h-full flex-col rounded-3xl border-2 border-sky-500 bg-white p-8 shadow-2xl shadow-sky-200/80">
           <h3 class="text-xl font-semibold text-slate-900">Standard Home</h3>
-          <p class="mt-2 text-sm text-slate-500">Ideal for multi-bedroom homes and townhouses.</p>
-          <p class="mt-6 text-4xl font-bold text-sky-600">$149–$249</p>
-          <p class="mt-4 text-sm text-slate-600">Includes detailed track cleaning, screens, and interior mirrors.</p>
-        </div>
-        <div class="rounded-2xl bg-white p-8 shadow-xl shadow-slate-200/50">
+          <p class="mt-3 text-sm text-slate-500">Multi-bedroom homes and townhouses up to 2,200 sq. ft.</p>
+          <p class="mt-8 text-4xl font-bold text-sky-600">$149–$249</p>
+          <p class="mt-5 text-sm text-slate-600">Adds detailed track cleaning, screens, and interior glass accents.</p>
+        </article>
+        <article class="flex h-full flex-col rounded-3xl bg-white p-8 shadow-2xl shadow-slate-200/60">
           <h3 class="text-xl font-semibold text-slate-900">Large Home</h3>
-          <p class="mt-2 text-sm text-slate-500">For larger homes, view properties, and estates.</p>
-          <p class="mt-6 text-4xl font-bold text-sky-600">$249–$399+</p>
-          <p class="mt-4 text-sm text-slate-600">Custom plans for extra windows, balconies, and glass walls.</p>
-        </div>
+          <p class="mt-3 text-sm text-slate-500">View homes, hillside properties, and estates 2,200+ sq. ft.</p>
+          <p class="mt-8 text-4xl font-bold text-sky-600">$249–$399+</p>
+          <p class="mt-5 text-sm text-slate-600">Custom plans for extra glass, balconies, and specialty windows.</p>
+        </article>
       </div>
     </section>
   </main>
 
-  <section class="relative isolate overflow-hidden bg-gradient-to-r from-sky-500 via-sky-400 to-sky-600 py-16">
+  <section class="relative isolate overflow-hidden bg-gradient-to-r from-sky-500 via-sky-400 to-sky-600 py-20">
+    <div class="absolute -left-24 top-1/2 h-64 w-64 -translate-y-1/2 rounded-full bg-white/20 blur-3xl"></div>
+    <div class="absolute -right-28 bottom-0 h-72 w-72 rounded-full bg-white/10 blur-3xl"></div>
     <div class="mx-auto flex max-w-5xl flex-col items-center gap-6 px-6 text-center text-white sm:px-10">
+      <p class="text-sm font-semibold uppercase tracking-[0.3em] text-sky-100/80">Book Today</p>
       <h2 class="text-3xl font-bold sm:text-4xl">Ready for Crystal-Clear Windows?</h2>
-      <p class="max-w-2xl text-lg text-sky-50">Send photos and cross streets for a fast quote. We respond quickly with pricing and availability.</p>
+      <p class="max-w-2xl text-lg text-sky-50">Send photos and cross streets for a fast quote. We respond quickly with pricing, scheduling, and tips to prep your space.</p>
       <div class="flex flex-wrap justify-center gap-4">
-        <a href="sms:15626852108" class="rounded-full bg-white px-6 py-3 font-semibold text-sky-600 shadow-lg shadow-sky-900/20 transition hover:bg-sky-100">Text Photos for Quote</a>
-        <a href="mailto:Dpgorbea@gmail.com" class="rounded-full border border-white/70 px-6 py-3 font-semibold text-white transition hover:bg-white hover:text-sky-600">Email Us</a>
+        <a
+          href="sms:15626852108"
+          class="rounded-full bg-white px-7 py-3 text-base font-semibold text-sky-600 shadow-lg shadow-sky-900/20 transition hover:bg-sky-100"
+        >Text Photos for Quote</a>
+        <a
+          href="mailto:Dpgorbea@gmail.com"
+          class="rounded-full border border-white/70 px-7 py-3 text-base font-semibold text-white transition hover:bg-white/10"
+        >Email Us</a>
       </div>
     </div>
   </section>
 
-  <section class="mx-auto max-w-6xl px-6 py-16 sm:px-10 sm:py-20">
-    <div class="mb-10 flex flex-col gap-3 text-center">
-      <h2 class="text-3xl font-bold text-slate-900 sm:text-4xl">Gallery</h2>
-      <p class="text-slate-600">Real results from our neighbors around City Terrace and East Los Angeles.</p>
+  <section id="gallery" class="mx-auto max-w-6xl px-6 py-20 sm:px-10">
+    <div class="mb-12 text-center">
+      <p class="text-sm font-semibold uppercase tracking-[0.35em] text-sky-500">Results</p>
+      <h2 class="mt-3 text-3xl font-bold text-slate-900 sm:text-4xl">Recent Work Around the Neighborhood</h2>
+      <p class="mt-4 text-base text-slate-600">Before-and-after snapshots from homes and storefronts in City Terrace and East LA.</p>
     </div>
     <div class="fade-gallery grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      <img src="https://raw.githubusercontent.com/Dpgorbea/CityTerraceWC/main/IMG_0361.jpg" alt="Before and after window cleaning" class="h-64 w-full rounded-2xl bg-white object-contain p-2 shadow-lg shadow-slate-200/60" />
-      <img src="https://raw.githubusercontent.com/Dpgorbea/CityTerraceWC/main/IMG_0362.jpg" alt="Cleaned glass door" class="h-64 w-full rounded-2xl bg-white object-contain p-2 shadow-lg shadow-slate-200/60" />
-      <img src="https://raw.githubusercontent.com/Dpgorbea/CityTerraceWC/main/IMG_0369_SnapseedCopy.jpg" alt="Window cleaning detail" class="h-64 w-full rounded-2xl bg-white object-contain p-2 shadow-lg shadow-slate-200/60" />
-      <img src="https://raw.githubusercontent.com/Dpgorbea/CityTerraceWC/main/IMG_0373.jpg" alt="Sparkling storefront window" class="h-64 w-full rounded-2xl bg-white object-contain p-2 shadow-lg shadow-slate-200/60" />
-      <img src="https://raw.githubusercontent.com/Dpgorbea/CityTerraceWC/main/IMG_5668.jpg" alt="Residential window cleaning" class="h-64 w-full rounded-2xl bg-white object-contain p-2 shadow-lg shadow-slate-200/60 sm:col-span-2 lg:col-span-1" />
+      <img
+        src="https://raw.githubusercontent.com/Dpgorbea/CityTerraceWC/main/IMG_0361.jpg"
+        alt="Before and after window cleaning"
+        class="h-64 w-full rounded-3xl bg-white object-contain p-3 shadow-xl shadow-slate-200/60"
+      />
+      <img
+        src="https://raw.githubusercontent.com/Dpgorbea/CityTerraceWC/main/IMG_0362.jpg"
+        alt="Cleaned glass door"
+        class="h-64 w-full rounded-3xl bg-white object-contain p-3 shadow-xl shadow-slate-200/60"
+      />
+      <img
+        src="https://raw.githubusercontent.com/Dpgorbea/CityTerraceWC/main/IMG_0369_SnapseedCopy.jpg"
+        alt="Window cleaning detail"
+        class="h-64 w-full rounded-3xl bg-white object-contain p-3 shadow-xl shadow-slate-200/60"
+      />
+      <img
+        src="https://raw.githubusercontent.com/Dpgorbea/CityTerraceWC/main/IMG_0373.jpg"
+        alt="Sparkling storefront window"
+        class="h-64 w-full rounded-3xl bg-white object-contain p-3 shadow-xl shadow-slate-200/60"
+      />
+      <img
+        src="https://raw.githubusercontent.com/Dpgorbea/CityTerraceWC/main/IMG_5668.jpg"
+        alt="Residential window cleaning"
+        class="h-64 w-full rounded-3xl bg-white object-contain p-3 shadow-xl shadow-slate-200/60 sm:col-span-2 lg:col-span-1"
+      />
     </div>
   </section>
 
-  <section class="bg-white py-16">
+  <section id="reviews" class="bg-white py-20">
     <div class="mx-auto max-w-6xl px-6 sm:px-10">
-      <div class="mb-10 flex flex-col gap-3 text-center">
-        <h2 class="text-3xl font-bold text-slate-900 sm:text-4xl">What Neighbors Are Saying</h2>
-        <p class="text-slate-600">Friendly service, spotless results, and repeat customers across East LA.</p>
+      <div class="mb-12 text-center">
+        <p class="text-sm font-semibold uppercase tracking-[0.35em] text-sky-500">Reviews</p>
+        <h2 class="mt-3 text-3xl font-bold text-slate-900 sm:text-4xl">What Neighbors Are Saying</h2>
+        <p class="mt-4 text-base text-slate-600">Friendly service, spotless results, and repeat customers across East LA.</p>
       </div>
       <div class="grid gap-6 md:grid-cols-3">
-        <blockquote class="rounded-2xl bg-slate-50 p-6 shadow-lg shadow-slate-200/40">
+        <blockquote class="rounded-3xl bg-slate-50 p-7 shadow-xl shadow-slate-200/60">
           <p class="text-sm text-slate-700">“They treated my bungalow like their own. Windows haven’t looked this good in years!”</p>
-          <footer class="mt-4 text-sm font-semibold text-slate-900">— Marisol G., City Terrace neighbor</footer>
+          <footer class="mt-5 text-sm font-semibold text-slate-900">— Marisol G., City Terrace neighbor</footer>
         </blockquote>
-        <blockquote class="rounded-2xl bg-slate-50 p-6 shadow-lg shadow-slate-200/40">
+        <blockquote class="rounded-3xl bg-slate-50 p-7 shadow-xl shadow-slate-200/60">
           <p class="text-sm text-slate-700">“Our storefront shines every morning. Dependable, communicative, and fair pricing.”</p>
-          <footer class="mt-4 text-sm font-semibold text-slate-900">— Ricardo L., Small Business Owner</footer>
+          <footer class="mt-5 text-sm font-semibold text-slate-900">— Ricardo L., Small Business Owner</footer>
         </blockquote>
-        <blockquote class="rounded-2xl bg-slate-50 p-6 shadow-lg shadow-slate-200/40">
+        <blockquote class="rounded-3xl bg-slate-50 p-7 shadow-xl shadow-slate-200/60">
           <p class="text-sm text-slate-700">“Got a quote within minutes over text and booked for the next day. Five stars!”</p>
-          <footer class="mt-4 text-sm font-semibold text-slate-900">— Ana P., Boyle Heights</footer>
+          <footer class="mt-5 text-sm font-semibold text-slate-900">— Ana P., Boyle Heights</footer>
         </blockquote>
       </div>
     </div>
   </section>
 
-  <section class="mx-auto max-w-6xl px-6 py-16 sm:px-10 sm:py-20">
-    <div class="mb-10 flex flex-col gap-3 text-center">
-      <h2 class="text-3xl font-bold text-slate-900 sm:text-4xl">FAQ</h2>
-      <p class="text-slate-600">Quick answers to common questions about our window cleaning services.</p>
+  <section id="faq" class="mx-auto max-w-6xl px-6 py-20 sm:px-10">
+    <div class="mb-12 text-center">
+      <p class="text-sm font-semibold uppercase tracking-[0.35em] text-sky-500">FAQ</p>
+      <h2 class="mt-3 text-3xl font-bold text-slate-900 sm:text-4xl">Quick Answers</h2>
+      <p class="mt-4 text-base text-slate-600">Have another question? Text or email and we’ll respond right away.</p>
     </div>
     <div class="mx-auto max-w-3xl space-y-4">
-      <details class="group rounded-2xl bg-white p-6 shadow-lg shadow-slate-200/40">
+      <details class="group rounded-3xl bg-white p-6 shadow-xl shadow-slate-200/60">
         <summary class="cursor-pointer text-lg font-semibold text-slate-900">How soon can you come out?</summary>
         <p class="mt-3 text-sm text-slate-600">Most visits are scheduled within 2–3 days. Text us photos and cross streets for the fastest booking.</p>
       </details>
-      <details class="group rounded-2xl bg-white p-6 shadow-lg shadow-slate-200/40">
+      <details class="group rounded-3xl bg-white p-6 shadow-xl shadow-slate-200/60">
         <summary class="cursor-pointer text-lg font-semibold text-slate-900">Do I need to be home?</summary>
         <p class="mt-3 text-sm text-slate-600">Interior work requires someone home, but exterior-only cleanings can be done while you’re out. We keep you updated with photos.</p>
       </details>
-      <details class="group rounded-2xl bg-white p-6 shadow-lg shadow-slate-200/40">
+      <details class="group rounded-3xl bg-white p-6 shadow-xl shadow-slate-200/60">
         <summary class="cursor-pointer text-lg font-semibold text-slate-900">How do you price?</summary>
         <p class="mt-3 text-sm text-slate-600">We price based on window count, accessibility, and add-ons like screens or hard water removal. Packages cover most homes, and we confirm before starting.</p>
       </details>
     </div>
   </section>
 
-  <footer class="bg-slate-900 py-10">
-    <div class="mx-auto flex max-w-6xl flex-col items-center gap-3 px-6 text-center text-slate-300 sm:px-10">
+  <section id="espanol" class="bg-slate-900/95 py-24 text-slate-100">
+    <div class="mx-auto max-w-6xl px-6 sm:px-10">
+      <div class="flex flex-col gap-4 text-center">
+        <p class="text-sm font-semibold uppercase tracking-[0.35em] text-sky-300">En Español</p>
+        <h2 class="text-3xl font-bold sm:text-4xl">Limpieza de Ventanas para Nuestros Vecinos de City Terrace</h2>
+        <p class="text-base text-slate-200">Servicio profesional con precios claros, atención amable y respuestas rápidas por texto.</p>
+      </div>
+
+      <div class="mt-16 grid gap-6 md:grid-cols-3">
+        <article class="rounded-3xl bg-slate-800/70 p-7 shadow-2xl shadow-black/30">
+          <h3 class="text-xl font-semibold text-white">Servicios Residenciales</h3>
+          <p class="mt-4 text-sm text-slate-200">Ventanas por dentro y fuera, espejos, puertas corredizas, tragaluces y limpieza de marcos.</p>
+          <p class="mt-6 text-sm font-semibold text-sky-300">Perfecto para apartamentos, duplex y casas familiares.</p>
+        </article>
+        <article class="rounded-3xl bg-slate-800/70 p-7 shadow-2xl shadow-black/30">
+          <h3 class="text-xl font-semibold text-white">Frentes Comerciales</h3>
+          <p class="mt-4 text-sm text-slate-200">Mantenimiento programado de vitrinas, entradas y áreas comunes para negocios locales.</p>
+          <p class="mt-6 text-sm font-semibold text-sky-300">Opciones semanal, quincenal o mensual.</p>
+        </article>
+        <article class="rounded-3xl bg-slate-800/70 p-7 shadow-2xl shadow-black/30">
+          <h3 class="text-xl font-semibold text-white">Servicios Adicionales</h3>
+          <p class="mt-4 text-sm text-slate-200">Limpieza de mosquiteros, rieles, eliminación de sarro y trabajos después de construcción.</p>
+          <p class="mt-6 text-sm font-semibold text-sky-300">Combinamos servicios para darte mejor precio.</p>
+        </article>
+      </div>
+
+      <div class="mt-16 grid gap-6 lg:grid-cols-3">
+        <article class="rounded-3xl border border-slate-700 bg-slate-800/70 p-8 shadow-2xl shadow-black/30">
+          <h3 class="text-xl font-semibold text-white">Departamento / Casa Pequeña</h3>
+          <p class="mt-3 text-sm text-slate-300">Hasta 1,200 pies cuadrados. Perfecto para espacios compactos.</p>
+          <p class="mt-8 text-4xl font-bold text-sky-300">$99–$149</p>
+          <p class="mt-5 text-sm text-slate-200">Incluye vidrios por dentro y fuera, espejos y puertas corredizas.</p>
+        </article>
+        <article class="rounded-3xl border-2 border-sky-400 bg-slate-800/70 p-8 shadow-2xl shadow-black/30">
+          <h3 class="text-xl font-semibold text-white">Casa Estándar</h3>
+          <p class="mt-3 text-sm text-slate-300">Casas de varios cuartos y townhomes hasta 2,200 pies cuadrados.</p>
+          <p class="mt-8 text-4xl font-bold text-sky-300">$149–$249</p>
+          <p class="mt-5 text-sm text-slate-200">Incluye limpieza detallada de rieles, mosquiteros y vidrio interior decorativo.</p>
+        </article>
+        <article class="rounded-3xl border border-slate-700 bg-slate-800/70 p-8 shadow-2xl shadow-black/30">
+          <h3 class="text-xl font-semibold text-white">Casa Grande</h3>
+          <p class="mt-3 text-sm text-slate-300">Propiedades en colinas, casas con vista y residencias de más de 2,200 pies cuadrados.</p>
+          <p class="mt-8 text-4xl font-bold text-sky-300">$249–$399+</p>
+          <p class="mt-5 text-sm text-slate-200">Planes personalizados para terrazas, balcones y grandes ventanales.</p>
+        </article>
+      </div>
+
+      <div class="mt-16 grid gap-6 lg:grid-cols-2">
+        <article class="rounded-3xl bg-slate-800/70 p-8 shadow-2xl shadow-black/30">
+          <h3 class="text-2xl font-semibold text-white">¿Listo para agendar?</h3>
+          <p class="mt-4 text-sm text-slate-200">Envíanos fotos y cruces de calles para recibir una cotización rápida en minutos.</p>
+          <div class="mt-6 flex flex-wrap gap-4">
+            <a
+              href="sms:15626852108"
+              class="rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 shadow-lg shadow-black/30 transition hover:bg-slate-100"
+            >Enviar Fotos por Texto</a>
+            <a
+              href="mailto:Dpgorbea@gmail.com"
+              class="rounded-full border border-slate-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+            >Mandar Correo</a>
+          </div>
+        </article>
+        <article class="rounded-3xl bg-slate-800/70 p-8 shadow-2xl shadow-black/30">
+          <h3 class="text-2xl font-semibold text-white">Preguntas Frecuentes</h3>
+          <ul class="mt-4 space-y-3 text-left text-sm text-slate-200">
+            <li><strong class="text-white">¿Cuándo pueden venir?</strong> — La mayoría de las visitas se programan en 2–3 días.</li>
+            <li><strong class="text-white">¿Tengo que estar en casa?</strong> — Solo para trabajos interiores. Exterior se puede hacer sin que estés.</li>
+            <li><strong class="text-white">¿Cómo calculan el precio?</strong> — Contamos ventanas, accesibilidad y servicios extra antes de confirmar.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-slate-950 py-12 text-slate-400">
+    <div class="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 text-center sm:px-10">
       <span class="text-lg font-semibold text-white">City Terrace Window Cleaning</span>
       <div class="flex flex-col gap-1 text-sm sm:flex-row sm:items-center sm:gap-4">
-        <a href="tel:15626852108" class="hover:text-white">562-685-2108</a>
-        <span class="hidden text-slate-500 sm:block">|</span>
-        <a href="mailto:Dpgorbea@gmail.com" class="hover:text-white">Dpgorbea@gmail.com</a>
+        <a href="tel:15626852108" class="transition hover:text-white">562-685-2108</a>
+        <span class="hidden text-slate-600 sm:block">|</span>
+        <a href="mailto:Dpgorbea@gmail.com" class="transition hover:text-white">Dpgorbea@gmail.com</a>
       </div>
-      <p class="text-xs text-slate-500">&copy; <span id="year"></span> City Terrace Window Cleaning. All rights reserved.</p>
+      <p class="text-xs text-slate-600">&copy; <span id="year"></span> City Terrace Window Cleaning. All rights reserved.</p>
+      <p class="text-xs text-slate-600">Servicios disponibles en inglés y español.</p>
     </div>
   </footer>
 
